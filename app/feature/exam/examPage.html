@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trả lời câu hỏi</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="exam.css" />
+    <link rel="stylesheet" href="../../constance/style/globalStyle.css" />
+  </head>
+  <script
+    src="https://kit.fontawesome.com/97aa991169.js"
+    crossorigin="anonymous"
+  ></script>
+  <body>
+    <div class="main">
+      <div class="grid wide">
+        <div class="header">
+          <div class="row">
+            <div class="col l-4 m-0 c-0">
+              <div class="title h3">Thi trắc nghiệm tiếng anh</div>
+            </div>
+            <div class="col l-4 m-6 c-6">
+              <div class="row">
+                <div class="title h3">
+                  <i class="fa-solid fa-stopwatch" style="font-size: 40px"></i>
+                </div>
+                <div id="countdown" class="h2"></div>
+              </div>
+            </div>
+            <div class="col l-4 m-6 c-0">
+              <div class="row user-group">
+                <div class="title h3">
+                  <div class="avata">
+                    <i class="fa-solid fa-user" style="font-size: 40px"></i>
+                  </div>
+                </div>
+                <div class="user-header">
+                  <p>Họ và tên: &nbsp;Lê Lung Linh</p>
+                  <p>Mã sinh viên: &nbsp;123456789</p>
+                </div>
+                <div id="countdown" class="h2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-content">
+          <div class="row">
+            <div class="col l-8 m-8 c-12">
+              <div class="box-question">
+                <div class="title h3">Hãy chọn một câu trả lời đúng nhất</div>
+                <div class="question-group"></div>
+              </div>
+            </div>
+            <div class="col l-4 m-4 c-12">
+              <div class="box-total">
+                <div class="title h3">Tổng số câu hỏi: 20</div>
+                <div class="row list-mini-question"></div>
+                <div class="button-item" style="margin-left: auto">
+                  <button type="button" class="btn btn-success">Nộp bài</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="glyphicon icon-srtop glyphicon-chevron-up"></span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./exam.js"></script>
+  </body>
+</html>

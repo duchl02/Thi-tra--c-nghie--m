@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang chủ</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./home.css" />
+    <link rel="stylesheet" href="../../constance/style/globalStyle.css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button
+              type="button"
+              class="navbar-toggle"
+              data-toggle="collapse"
+              data-target="#navbar"
+            >
+              <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+            <a
+              class="navbar-brand container__selection-item active"
+              style="cursor: pointer"
+              >Trang chủ</a
+            >
+          </div>
+          <div class="navbar-collapse collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="container__selection-item">Làm bài thi</a></li>
+              <li><a class="container__selection-item">Tài khoản</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content container__content active ">
+      <h1>Trang chu</h1>
+    </div>
+
+    <div class="content container__content " >
+      <div class="grid wide">
+        <h1>Các môn học chưa thi</h1>
+        <div class="subject_box col" onclick="goToPage(`001`)">
+          <div class="title h3 row">Vật lý</div>
+          <div class="row">
+            <div class="normal_text">Giáo viên:&nbsp;</div>
+            <div class="teacher">Nguyễn Đình Thám</div>
+          </div>
+          <div class="row">
+            <div class="normal_text">Thời gian:&nbsp;</div>
+            <div class="teacher">45 phút</div>
+          </div>
+          <div class="row">
+            <div class="normal_text">Tổng số câu hỏi:&nbsp;</div>
+            <div class="teacher">20 câu hỏi trắc nghiệm</div>
+          </div>
+        </div>
+        <div class="subject_box col" onclick="goToPage(`002`)" >
+            <div class="title h3 row">Hoá học</div>
+            <div class="row">
+              <div class="normal_text">Giáo viên:&nbsp;</div>
+              <div class="teacher">Nguyễn Thị Bông</div>
+            </div>
+            <div class="row">
+              <div class="normal_text">Thời gian:&nbsp;</div>
+              <div class="teacher">45 phút</div>
+            </div>
+            <div class="row">
+              <div class="normal_text">Tổng số câu hỏi:&nbsp;</div>
+              <div class="teacher">20 câu hỏi trắc nghiệm</div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="content container__content">
+      <h1>tai khoan</h1>
+    </div>
+
+    <!-- <span class="glyphicon icon-srtop glyphicon-chevron-up"></span> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
