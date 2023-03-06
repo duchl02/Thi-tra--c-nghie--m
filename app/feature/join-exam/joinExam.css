@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 15px Lato, sans-serif;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h4 {
+  color: black;
+}
+
+.info {
+  position: fixed;
+  top: 48px;
+  left: 0;
+  right: 0;
+  background-color: #d7d6d6;
+  height: 10px;
+  width: 100%;
+  z-index: 10000;
+}
+
+.info .value {
+  position: absolute;
+  background-color: #000;
+  width: 10%;
+  height: 10px;
+  left: 0;
+  right: 0;
+}
+
+.icon-srtop {
+  text-align: right;
+  border-radius: 50px;
+  padding: 3px;
+  border: 1px solid #3da9fc;
+  cursor: pointer;
+  color: #3da9fc;
+  font-size: 25px;
+  margin: 16px;
+  position: fixed;
+  top: 90%;
+  right: 0;
+}
+
+.sm-logo {
+  color: #3da9fc;
+  font-size: 50px;
+}
+
+.navbar {
+  background-color: #3da9fc;
+  border: none;
+}
+
+.navbar .navbar-header {
+  color: #fff;
+}
+
+.navbar .navbar-header button {
+  border: none;
+}
+
+.navbar .navbar-header a {
+  color: #fff;
+  font-family: Montserrat;
+}
+
+.navbar .navbar-header a:hover {
+  color: #fff;
+}
+
+.navbar .nav li a {
+  color: #fff;
+  padding: 14px 18px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.navbar .nav li a:hover {
+  background-color: #fff;
+  color: #3da9fc;
+}
+
+.jumbotron {
+  background-color: #3da9fc;
+  /* Orange */
+  color: #fff;
+  padding: 100px 25px;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.container-fluid {
+  padding: 60px 50px;
+}
+
+.logo {
+  font-size: 200px;
+  color: #3da9fc;
+}
+
+.col-sm-4 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  padding: 80px 0;
+}
+
+.carousel .left,
+.carousel .right,
+.carousel .sr-only {
+  color: #3da9fc;
+  background-image: none;
+}
+
+.carousel .carousel-indicators li {
+  border: 1px solid #3da9fc;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #3da9fc;
+}
+
+.panel {
+  border: 1px solid #3da9fc;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.panel:hover {
+  -webkit-box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.panel .panel-heading {
+  padding: 20px 40px;
+  background-color: #3da9fc;
+}
+
+.panel .panel-heading h1 {
+  color: #fff;
+}
+
+.panel .btn {
+  background-color: #3da9fc;
+  color: #fff;
+}
+
+.panel .btn:hover {
+  border: 1px solid #3da9fc;
+  color: #3da9fc;
+  background-color: #fff;
+}
+
+.slideScroll {
+  visibility: hidden;
+}
+
+.slide {
+  -webkit-animation-name: slideanimate;
+          animation-name: slideanimate;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  visibility: visible;
+}
+
+.container__content {
+  display: none;
+  margin-top: 80px !important;
+}
+
+.container__content.active {
+  display: block;
+}
+
+.container__content .subject_box {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: 1px solid #7eb8e5;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container__content .subject_box .title {
+  color: #3da9fc;
+  margin-top: 0;
+}
+
+.container__content .subject_box .teacher {
+  color: #5ab7f6;
+}
+
+.container__selection-item.active {
+  background-color: #fff;
+}
+
+.container__selection-item.active {
+  color: #3da9fc !important;
+}
+
+.container__selection-item.active:hover {
+  background-color: #fff !important;
+  color: #3da9fc !important;
+}
+
+@-webkit-keyframes slideanimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slideanimate {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+            transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+/*# sourceMappingURL=joinExam.css.map */

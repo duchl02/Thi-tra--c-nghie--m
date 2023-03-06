@@ -6,7 +6,7 @@ scrollTopBtn.addEventListener("click", function () {
 });
 
 var now = new Date();
-now.setMinutes(now.getMinutes() + 1);
+now.setMinutes(now.getMinutes() + 45);
 var countDownDate = now.getTime();
 
 var x = setInterval(function () {
@@ -48,64 +48,64 @@ for (let i = 1; i < 21; i++) {
 }
 const miniQuestion = document.querySelector(".list-mini-question");
 
-miniQuestion.innerHTML = data
-  .map((e) => {
-    return `<div class="col l-2 m-2 c-2">
-<div class="mini-question" style="cursor: pointer;" onclick="scrollToQuestion(${e.id})" id="btn-exam-${e.id}">${e.id}</div>
-</div>`;
-  })
-  .join("");
+// miniQuestion.innerHTML = data
+//   .map((e) => {
+//     return `<div class="col l-2 m-2 c-2">
+// <div class="mini-question" style="cursor: pointer;" onclick="scrollToQuestion(${e.id})" id="btn-exam-${e.id}">${e.id}</div>
+// </div>`;
+//   })
+//   .join("");
 
-question.innerHTML = data
-  .map((e) => {
-    return `<div class="question-item" >
-  <div clss="title  h4" id ="question-${e.id}">Câu ${e.id}: Đây là câu hỏi ${e.id}</div>
-  <div class="answer">
-    <div class="form-check">
-      <input
-        type="radio"
-        class="form-check-input"
-        id="radio${e.id}-answer1"
-        name="optradio${e.id}"
-        onchange="checkBtn(${e.id})"
-        value="radio${e.id}-answer1"
-      />
-      <label class="form-check-label" for="radio${e.id}-answer1"
-        >${e.answer1}</label
-      >
-    </div>
-    <div class="form-check">
-      <input
-        type="radio"
-        class="form-check-input"
-        id="radio${e.id}-answer2"
-        name="optradio${e.id}"
-        value="radio${e.id}-answer2"
-        onchange="checkBtn(${e.id})"
+// question.innerHTML = data
+//   .map((e) => {
+//     return `<div class="question-item" >
+//   <div clss="title  h4" id ="question-${e.id}">Câu ${e.id}: Đây là câu hỏi ${e.id}</div>
+//   <div class="answer">
+//     <div class="form-check">
+//       <input
+//         type="radio"
+//         class="form-check-input"
+//         id="radio${e.id}-answer1"
+//         name="optradio${e.id}"
+//         onchange="checkBtn(${e.id})"
+//         value="radio${e.id}-answer1"
+//       />
+//       <label class="form-check-label" for="radio${e.id}-answer1"
+//         >${e.answer1}</label
+//       >
+//     </div>
+//     <div class="form-check">
+//       <input
+//         type="radio"
+//         class="form-check-input"
+//         id="radio${e.id}-answer2"
+//         name="optradio${e.id}"
+//         value="radio${e.id}-answer2"
+//         onchange="checkBtn(${e.id})"
 
-      />
-      <label class="form-check-label" for="radio${e.id}-answer2"
-        >${e.answer2}</label
-      >
-    </div>
-    <div class="form-check">
-      <input
-        type="radio"
-        class="form-check-input"
-        id="radio${e.id}-answer3"
-        name="optradio${e.id}"
-        value="radio${e.id}-answer3"
-        onchange="checkBtn(${e.id})"
+//       />
+//       <label class="form-check-label" for="radio${e.id}-answer2"
+//         >${e.answer2}</label
+//       >
+//     </div>
+//     <div class="form-check">
+//       <input
+//         type="radio"
+//         class="form-check-input"
+//         id="radio${e.id}-answer3"
+//         name="optradio${e.id}"
+//         value="radio${e.id}-answer3"
+//         onchange="checkBtn(${e.id})"
 
-      />
-      <label class="form-check-label" for="radio${e.id}-answer3"
-        >${e.answer3}</label
-      >
-    </div>
-  </div>
-</div>`;
-  })
-  .join("");
+//       />
+//       <label class="form-check-label" for="radio${e.id}-answer3"
+//         >${e.answer3}</label
+//       >
+//     </div>
+//   </div>
+// </div>`;
+  // })
+  // .join("");
 
 function scrollToQuestion(className) {
   const element = document.getElementById(`question-${className}`);

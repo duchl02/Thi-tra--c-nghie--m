@@ -19,8 +19,14 @@ items.forEach(function (item, index) {
   };
 });
 
-function goToPage(code) {
-    console.log(code);
-    console.log(window.linkGlobal);
-  window.location.href = `${window.linkGlobal}/app/feature/join-exam/joinExam.html`;
+function goToExam(code) {
+  window.location.href = `${window.linkGlobal}/app/feature/exam/examPage.html`;
 }
+
+function goBackHome(code) {
+  window.location.href = `${window.linkGlobal}/app/feature/home/homePage.html`;
+}
+
+// $(".icon-srtop").on("click", function () {
+//     $(window).scrollTop(0);
+// });

@@ -1,0 +1,265 @@
+@import "./variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    // color: #818181;
+}
+
+h1,
+h2,
+h4 {
+    color: black;
+}
+
+.info {
+    position: fixed;
+    top: 48px;
+    left: 0;
+    right: 0;
+    background-color: rgb(215, 214, 214);
+    height: 10px;
+    width: 100%;
+    z-index: 10000;
+
+    .value {
+        position: absolute;
+        background-color: #000;
+        width: 10%;
+        height: 10px;
+        left: 0;
+        right: 0;
+    }
+}
+
+.icon-srtop {
+    text-align: right;
+    border-radius: 50px;
+    padding: 3px;
+    border: 1px solid $bgacolor;
+    cursor: pointer;
+    color: $bgacolor;
+    font-size: 25px;
+    margin: 16px;
+    position: fixed;
+    top: 90%;
+    right: 0;
+}
+
+.sm-logo {
+    color: $bgacolor;
+    font-size: 50px;
+}
+
+.navbar {
+    background-color: $bgacolor;
+    border: none;
+
+    .navbar-header {
+        color: $textcolor;
+
+        button {
+            border: none;
+        }
+
+        a {
+            color: $textcolor;
+            font-family: Montserrat;
+
+            &:hover {
+                color: $textcolor;
+            }
+        }
+    }
+
+
+    .nav {
+        li {
+            a {
+                color: $textcolor;
+                padding: 14px 18px;
+                height: 50px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $textcolor ;
+                    color: $bgacolor ;
+                }
+            }
+
+        }
+    }
+}
+
+.jumbotron {
+    background-color: $bgacolor;
+    /* Orange */
+    color: $textcolor;
+    padding: 100px 25px;
+}
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.logo {
+    font-size: 200px;
+    color: $bgacolor;
+}
+
+.col-sm-4 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.carousel {
+    padding: 80px 0;
+
+    .left,
+    .right,
+    .sr-only {
+        color: $bgacolor;
+        background-image: none;
+    }
+
+    .carousel-indicators li {
+        border: 1px solid $bgacolor;
+    }
+
+    .carousel-indicators li.active {
+        background-color: $bgacolor;
+    }
+}
+
+.panel {
+    border: 1px solid $bgacolor;
+    transition: box-shadow 0.5s;
+
+    &:hover {
+        box-shadow: 5px 0px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .panel-heading {
+        padding: 20px 40px;
+        background-color: $bgacolor;
+
+        h1 {
+            color: $textcolor;
+        }
+    }
+
+    .btn {
+        background-color: $bgacolor;
+        color: $textcolor;
+
+        &:hover {
+            border: 1px solid $bgacolor;
+            color: $bgacolor;
+            background-color: $textcolor;
+        }
+    }
+}
+
+.slideScroll {
+    visibility: hidden;
+}
+
+.slide {
+    animation-name: slideanimate;
+    animation-duration: 1s;
+    visibility: visible;
+}
+
+.container__content {
+    display: none;
+    margin-top: 80px !important;
+}
+
+.container__content.active {
+    display: block;
+}
+.container__content{
+    .subject_box{
+        margin-top: 20px;
+        padding: 10px 20px;
+        border: 1px solid $bordercolor;
+        border-radius: 10px;
+        cursor: pointer;
+        .title{
+            color: $titlecolor;
+            margin-top: 0;
+        }
+        .teacher{
+            color: $headline;
+        }
+    }
+}
+
+.container__selection-item.active {
+    background-color: $textcolor;
+}
+
+.container__selection-item.active {
+    color: $bgacolor !important;
+}
+
+.container__selection-item.active {
+    &:hover {
+        background-color: $textcolor !important;
+        color: $bgacolor !important;
+    }
+}
+
+.result-box{
+    text-align: center;
+    width: 400px;
+    // height: 200px;
+    border: 1px solid;
+    padding: 20px;
+    margin-bottom: 20px;
+    .scores-title{
+        text-align: center;
+    }
+    .score{
+        text-align: center;
+        color: red;
+        font-size: 40px;
+    }.rows{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.box{
+    display: flex !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

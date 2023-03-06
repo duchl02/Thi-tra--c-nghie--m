@@ -62,13 +62,78 @@
             <div class="col l-8 m-8 c-12">
               <div class="box-question">
                 <div class="title h3">Hãy chọn một câu trả lời đúng nhất</div>
-                <div class="question-group"></div>
+                <div class="question-group">
+                  <div class="question-item" >
+                    <div clss="title  h4" id ="question1">Câu 1: Đây là câu hỏi 1</div>
+                    <div class="answer">
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1-answer1"
+                          name="optradio1"
+                          onchange="checkBtn(1)"
+                          value="radio${e.id}-answer1"
+                        />
+                        <label class="form-check-label" for="radio1-answer1"
+                          >${e.answer1}</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1-answer2"
+                          name="optradio1"
+                          value="radio1-answer2"
+                          onchange="checkBtn(1)"
+                  
+                        />
+                        <label class="form-check-label" for="radio1-answer2"
+                          >${e.answer2}</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1-answer3"
+                          name="optradio1"
+                          value="radio1-answer3"
+                          onchange="checkBtn(1)"
+                  
+                        />
+                        <label class="form-check-label" for="radio1-answer3"
+                          >${e.answer3}</label
+                        >
+                      </div>
+                      <div class="form-check">
+                        <input
+                          type="radio"
+                          class="form-check-input"
+                          id="radio1-answer4"
+                          name="optradio1"
+                          value="radio1-answer4"
+                          onchange="checkBtn(1)"
+                  
+                        />
+                        <label class="form-check-label" for="radio1-answer4"
+                          >${e.answer4}</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col l-4 m-4 c-12">
               <div class="box-total">
                 <div class="title h3">Tổng số câu hỏi: 20</div>
-                <div class="row list-mini-question"></div>
+                <div class="row list-mini-question">
+                  <div class="col l-2 m-2 c-2">
+                    <div class="mini-question" style="cursor: pointer;" onclick="scrollToQuestion(1)" id="btn-exam-1">1</div>
+                    </div>
+                </div>
                 <div class="button-item" style="margin-left: auto">
                   <button type="button" class="btn btn-success">Nộp bài</button>
                 </div>
